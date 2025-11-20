@@ -64,14 +64,14 @@ Historical data is cached in MongoDB for quick retrieval.
 
 4. Flexible Queries
 Users can filter transactions by category: ERC20, ERC721, internal, external, or all.
-Users can specify user flow type: from, to, or both.
+Users can specify the user flow type: from, to, or both.
 
 # Architecture Decisions
 
-MongoDB: Flexible schema and scalability for historical logs.
-Redis (Optional): In-memory caching for frequently queried addresses.
-Alchemy API: Provides real-time blockchain transaction data.
-BulkWrite + updateOne: Ensures idempotency and high-performance writes using txnHash.
+1. MongoDB: Flexible schema and scalability for historical logs.
+2. Redis (Optional): In-memory caching for frequently queried addresses.
+3. Alchemy API: Provides real-time blockchain transaction data.
+4. BulkWrite + updateOne: Ensures idempotency and high-performance writes using txnHash.
 
 # API Endpoints
 GET /cointracker/report/:address
@@ -79,11 +79,11 @@ Fetch and download a CSV report of a user's transactions.
 Query Parameters:
 userflowtype: "from", "to", or "both"
 categoryType: "erc20", "erc721", "internal", "external", "all"
-(http://localhost:5001/cointracker/report/0xd620AADaBaA20d2af700853C4504028cba7C3333?userflowtype=both&categoryType=erc20)
+# (http://localhost:5001/cointracker/report/0xd620AADaBaA20d2af700853C4504028cba7C3333?userflowtype=both&categoryType=erc20)
 
 # Key Features & Conclusion
-Merges historical MongoDB data with real-time Alchemy API calls.
-Minimizes API usage for cost efficiency.
-Flexible queries by transaction category and user flow type.
-Idempotent transaction storage using txnHash as the unique identifier.
-Efficient bulk writes to handle large datasets and high user volumes.
+1. Merges historical MongoDB data with real-time Alchemy API calls.
+2. Minimizes API usage for cost efficiency.
+3. Flexible queries by transaction category and user flow type.
+4. Idempotent transaction storage using txnHash as the unique identifier.
+5. Efficient bulk writes to handle large datasets and high user volumes.
