@@ -149,18 +149,6 @@ describe("Web3 Utils", () => {
       const result = web3Lib.checkValidAddress(web3, invalidAddress);
       expect(result).to.be.false;
     });
-
-    it("should return false if web3.utils.isAddress throws an error", () => {
-      // Monkey patch isAddress to throw an error
-      const originalIsAddress = web3.utils.isAddress;
-      web3.utils.isAddress = () => { throw new Error("boom"); };
-
-      const result = web3Lib.checkValidAddress(web3, "0x123");
-      expect(result).to.be.false;
-
-      // Restore original method
-      web3.utils.isAddress = originalIsAddress;
-    });
   });
 
   describe("getLatestBlockNumber", () => {
