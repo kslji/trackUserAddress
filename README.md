@@ -79,7 +79,7 @@ Fetch and download a CSV report of a user's transactions.
 Query Parameters:
 userflowtype: "from", "to", or "both"
 categoryType: "erc20", "erc721", "internal", "external", "all"
-# (http://localhost:5001/cointracker/report/0xd620AADaBaA20d2af700853C4504028cba7C3333?userflowtype=both&categoryType=erc20)
+(http://localhost:5001/cointracker/report/0xd620AADaBaA20d2af700853C4504028cba7C3333?userflowtype=both&categoryType=erc20)
 
 # Key Features & Conclusion
 1. Merges historical MongoDB data with real-time Alchemy API calls.
