@@ -1,0 +1,32 @@
+{
+  "name": "trackuseraddress",
+  "version": "1.0.0",
+  "description": "Track user address and download into csv",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alchemy-sdk": "^3.6.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "install": "^0.13.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.20.1",
+    "npm": "^11.6.3",
+    "path": "^0.12.7",
+    "web3": "^1.10.1"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "chai-http": "^4.4.0",
+    "mocha": "^11.7.5"
+  }
+}

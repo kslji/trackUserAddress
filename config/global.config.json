@@ -1,0 +1,7 @@
+{
+  "fromBlock": 0,
+  "toblock": "latest",
+  "batchLimit": "0x3e8",
+  "withMetadata": true,
+  "mongoQueryTimeoutMS": 6000
+}
