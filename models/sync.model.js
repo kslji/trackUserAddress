@@ -27,5 +27,5 @@ const syncSchema = new mongoose.Schema(
 );
 syncSchema.index({ address: 1, category: 1, userLogType: 1 }, { unique: true });
 module.exports = mongoose.connection
-  .useDb(dbEnum.SYNC)
+  .useDb(dbEnum.TRANSACTIONS)
   .model(collectionEnum.SYNC, syncSchema);
