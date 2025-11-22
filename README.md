@@ -1,7 +1,7 @@
 # Track User Address and Download CSV
 
 ## Overview
-This project provides an API to **track Ethereum user addresses** and generate downloadable CSV reports of their on-chain activities. The system fetches transaction logs (ERC20, ERC721, internal, external) and ensures **cost-efficient access** by storing historical logs in MongoDB and using the Alchemy API only when needed.
+This project **track Ethereum user addresses** and generate downloadable CSV reports of their on-chain activities. The system fetches transaction logs (ERC20, ERC721, internal, external) and ensures **cost-efficient access** by storing historical logs in MongoDB and using the Alchemy API only when needed.
 
 ---
 
