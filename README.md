@@ -3,6 +3,8 @@
 ## Overview
 This project **track Ethereum user addresses** and generate downloadable CSV reports of their on-chain activities. The system fetches transaction logs (ERC20, ERC721, internal, external) and ensures **cost-efficient access** by storing historical logs in MongoDB and using the Alchemy API only when needed.
 
+<img width="661" height="359" alt="cointracker" src="https://github.com/user-attachments/assets/8f27323e-d77e-4530-95a4-9dff025ebc31" />
+
 ---
 
 ## Tech Stack
